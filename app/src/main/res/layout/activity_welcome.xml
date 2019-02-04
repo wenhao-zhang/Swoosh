@@ -16,15 +16,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,1:1"
             android:scaleType="centerCrop" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription"/>
     <ImageView
             android:src="@drawable/swooshlogo"
-            android:layout_width="95dp"
-            android:layout_height="35dp"
+            android:layout_width="105dp"
+            android:layout_height="45dp"
             android:id="@+id/imageView2" android:layout_marginTop="24dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:scaleType="fitCenter"/>
+            android:layout_marginStart="8dp" android:scaleType="fitCenter"
+            tools:ignore="ContentDescription"/>
     <TextView
             android:text="@string/go_all_in"
             android:layout_width="wrap_content"
@@ -52,15 +54,25 @@
             android:layout_marginTop="52dp" app:layout_constraintTop_toBottomOf="@+id/textView4"
             android:singleLine="false" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+
     <Button
             android:text="@string/get_started"
             android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="344dp" app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintHorizontal_bias="0.0" android:fontFamily="@font/montserrat"
-            android:textColor="@color/colorAccent" android:textSize="24sp"
-            android:background="@drawable/button"/>
+            android:layout_height="50dp"
+            android:id="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="300dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.829"/>
 
 </android.support.constraint.ConstraintLayout>
