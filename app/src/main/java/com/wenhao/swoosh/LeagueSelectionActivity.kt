@@ -1,9 +1,8 @@
 package com.wenhao.swoosh
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class LeagueSelectionActivity : AppCompatActivity() {
+class LeagueSelectionActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
