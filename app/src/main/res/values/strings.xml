@@ -10,4 +10,8 @@
     <string name="next">Next</string>
     <string name="womens">Womens</string>
     <string name="co_ed">Co-ed</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="beginner">Beginner</string>
+    <string name="baller">Baller</string>
+    <string name="finish">Finish</string>
 </resources>

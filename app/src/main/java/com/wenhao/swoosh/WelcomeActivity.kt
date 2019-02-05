@@ -10,7 +10,7 @@ class WelcomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        getStartedBtn.setOnClickListener{
+        welcomeGetStartedBtn.setOnClickListener{
             val leagueIntent = Intent(this, LeagueSelectionActivity::class.java)
             startActivity(leagueIntent)
         }
