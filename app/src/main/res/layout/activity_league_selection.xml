@@ -84,7 +84,7 @@
         <ToggleButton
                 android:text="@string/mens"
                 android:layout_width="match_parent"
-                android:id="@+id/toggleButton6"
+                android:id="@+id/mensLeagueBtn"
                 android:textOff="@string/mens"
                 android:textOn="@string/mens"
                 android:fontFamily="@font/montserrat"
@@ -92,12 +92,12 @@
                 android:background="@drawable/toggle"
                 android:layout_height="50dp"
                 android:textColor="@android:color/white"
-                />
+                android:onClick="onMensClicked"/>
 
         <ToggleButton
                 android:text="@string/womens"
                 android:layout_width="match_parent"
-                android:id="@+id/toggleButton4"
+                android:id="@+id/womensLeagueBtn"
                 android:layout_marginTop="16dp"
                 android:textOff="@string/womens"
                 android:textOn="@string/womens"
@@ -106,19 +106,22 @@
                 android:layout_height="50dp"
                 android:background="@drawable/toggle"
                 android:textColor="@android:color/white"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp"
+                android:onClick="onWomensClicked"/>
 
         <ToggleButton
                 android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:id="@+id/toggleButton5"
+                android:id="@+id/coedLeagueBtn"
                 android:textOff="@string/co_ed"
                 android:textOn="@string/co_ed"
                 android:fontFamily="@font/montserrat"
                 android:textSize="18sp"
                 android:layout_height="50dp"
                 android:background="@drawable/toggle"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                android:onClick="onCoedClicked"
+                />
     </LinearLayout>
 
 
