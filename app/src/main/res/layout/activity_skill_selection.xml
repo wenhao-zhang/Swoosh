@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillSelectionActivity">
+        tools:context=".Controller.SkillSelectionActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -65,7 +65,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="24dp"
             android:textOff="@string/beginner"
-            android:textOn="@string/beginner"/>
+            android:textOn="@string/beginner"
+            android:onClick="onBeginnerClicked"/>
 
     <ToggleButton
             android:text="@string/baller"
@@ -83,7 +84,8 @@
             android:layout_marginEnd="24dp"
             android:layout_marginStart="16dp"
             android:textOff="@string/baller"
-            android:textOn="@string/baller"/>
+            android:textOn="@string/baller"
+            android:onClick="onBallerClicked"/>
 
     <Button
             android:text="@string/finish"
@@ -100,6 +102,7 @@
             android:textColor="@android:color/white"
             android:background="@drawable/button"
             android:layout_marginBottom="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="onFinishClicked"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.wenhao.swoosh
+package com.wenhao.swoosh.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

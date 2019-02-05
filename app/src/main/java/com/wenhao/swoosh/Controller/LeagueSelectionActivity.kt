@@ -1,10 +1,12 @@
-package com.wenhao.swoosh
+package com.wenhao.swoosh.Controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import android.widget.ToggleButton
+import com.wenhao.swoosh.Utilities.EXTRA_LEAGUE
+import com.wenhao.swoosh.R
+import com.wenhao.swoosh.Utilities.getState
 import kotlinx.android.synthetic.main.activity_league_selection.*
 
 class LeagueSelectionActivity : BaseActivity() {
@@ -22,16 +24,12 @@ class LeagueSelectionActivity : BaseActivity() {
             skillActivity.putExtra(EXTRA_LEAGUE, league)
             startActivity(skillActivity)
         }else{
-            val text = "Please select a league!"
-            val duration = Toast.LENGTH_SHORT
-            val toast = Toast.makeText(this, text, duration)
-
-            toast.show()
+            Toast.makeText( this,"Please select a league!", Toast.LENGTH_SHORT).show()
         }
     }
 
     fun onMensClicked(view: View){
-       this.setLeague(this.mensLeagueBtn, "mens")
+       this.league = getState(mensLeagueBtn)
 
         this.womensLeagueBtn.isChecked = false
         this.coedLeagueBtn.isChecked = false
@@ -39,24 +37,17 @@ class LeagueSelectionActivity : BaseActivity() {
     }
 
     fun onWomensClicked(view: View){
-        this.setLeague(this.womensLeagueBtn, "womens")
+        this.league = getState(womensLeagueBtn)
 
         this.mensLeagueBtn.isChecked = false
         this.coedLeagueBtn.isChecked = false
     }
 
     fun onCoedClicked(view: View){
-        this.setLeague(this.coedLeagueBtn, "co-ed")
+        this.league = getState(coedLeagueBtn)
 
         this.womensLeagueBtn.isChecked = false
         this.mensLeagueBtn.isChecked = false
     }
 
-    fun setLeague(btn: ToggleButton, league: String){
-        if (btn.isChecked) {
-            this.league = league
-        }else{
-            this.league = ""
-        }
-    }
 }
